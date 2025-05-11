@@ -1,0 +1,20 @@
+{
+  "name": "myFullstackApp",
+  "version": "1.0.0",
+  "description": "React + Node Fullstack App",
+  "scripts": {
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "server": "cd backend && node server.js",
+    "client": "cd frontend && npm start"
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.0",
+    "typescript": "^5.8.3"
+  },
+  "proxy": "http://localhost:3000",
+  "dependencies": {
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.1.6"
+  }
+}
